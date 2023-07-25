@@ -1,0 +1,63 @@
+.offcanvas {
+
+  width: 100%;
+  background-color: #f0f0f0;
+  /* padding: 10px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.offcanvas:not(.hidden) {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popupbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.progress-bar-container {
+  flex: 1;
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.progress-bar {
+  background-color: #007bff;
+  height: 100%;
+}
+
+.progress-icon {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.toggle-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-content.hidden {
+  display: none;
+}

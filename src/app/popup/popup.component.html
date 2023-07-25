@@ -1,0 +1,13 @@
+<div class="popupbar">
+  <button class="toggle-button" (click)="toggleOffCanvas()">Toggle Offcanvas</button>
+  <div class="offcanvas" [ngClass]="{ 'hidden': isOffCanvasHidden }">
+    <img src="../../assets/Img/launcher.png" style="width: 100px;" alt="">
+    <div>
+      <p>Migrating Data to selected environment</p>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-bar" [style.width.%]="progress"></div>
+    </div>
+    <p class="progress-text">Progress: {{ progress }}%</p>
+  </div>
+</div>
